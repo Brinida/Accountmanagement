@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Account management</title>
+  </head>
+  <body style=" background: radial-gradient(circle, rgba(44,83,148,1) 0%, rgba(255,255,255,1) 100%);">
+ 
+
+    <div class="container mt-5 mb-5">
+
+        <div class="row">
+            <div class="col-md-12  Login d-flex  justify-content-center ">
+                <div class="Card_body1 position-relative logingif">
+
+                    <div class="container position-absolute text-center regis">
+                        <div class="row">
+                            <div class="">
+                                <h2>Register Now</h2>
+                                <div class="text-center p-3">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores atque asperiores possimus quaerat numquam eos quibusdam consequuntur. Rem veritatis iure in nulla voluptatibus numquam adipisci cum, eos voluptas. Enim, est.</p>
+                            </div>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                   
+                 
+                </div>
+                <div>
+                    <div class="Card_body">
+                        <div class="header text-center" >
+                            <h2 class="text-white" >Sign Up</h2> 
+                        </div>
+                       
+                        <form class="container mt-3" onsubmit ="return validateForm()">
+                            <div class="mb-3">
+                              <label for="first name" class="form-label text-white">First Name</label>
+                              <input type="text" class="form-control" required >
+                              
+                            </div>
+                            <div class="mb-3">
+                                <label for="last name" class="form-label  text-white">Last Name</label>
+                                <input type="text" class="form-control" required >
+                                
+                              </div>
+                            <div class="mb-3">
+                              <label for="email" class="form-label  text-white">Email</label>
+                              <input type="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="create password" class="form-label  text-white">Password</label>
+                                <input type="password" class="form-control" name="pwd1" id="password1" required>
+        
+                               
+                                    <span id="msg" class="font-weight-light text-white pwddes " > <small> password must be 8-20 characters long, contain letters and numbers</small> </span> 
+                                
+            
+                              </div>
+        
+                              <div class="mb-4">
+                                <label for="confirm password" class="form-label  text-white">Confirm Password</label>
+                                <input type="password" class="form-control" name="pwd2" id="password2" required>
+                                <span id="msg1"  style="color:red"></span>
+                              </div>
+        
+                              <div class="d-flex justify-content-center mb-3 ">
+                                <a href="" class="  inquery  shadow-lg px-4 p-2  rounded "  >Sign up</a>
+        
+                            </div>
+        
+        
+                              
+                            </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="Login d-flex  justify-content-center" >
+   
+              
+        
+            <div class="Card_body">
+                <div class="header text-center" >
+                    <h2 class="text-white" >Sign Up</h2> 
+                </div>
+               
+                <form class="container mt-3" onsubmit ="return validateForm()">
+                    <div class="mb-3">
+                      <label for="first name" class="form-label text-white">First Name</label>
+                      <input type="text" class="form-control" required >
+                      
+                    </div>
+                    <div class="mb-3">
+                        <label for="last name" class="form-label  text-white">Last Name</label>
+                        <input type="text" class="form-control" required >
+                        
+                      </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label  text-white">Email</label>
+                      <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="create password" class="form-label  text-white">Password</label>
+                        <input type="password" class="form-control" name="pwd1" id="password1" required>
+
+                       
+                            <span id="msg" class="font-weight-light text-white pwddes " > <small> password must be 8-20 characters long, contain letters and numbers</small> </span> 
+                        
+    
+                      </div>
+
+                      <div class="mb-4">
+                        <label for="confirm password" class="form-label  text-white">Confirm Password</label>
+                        <input type="password" class="form-control" name="pwd2" id="password2" required>
+                        <span id="msg1"  style="color:red"></span>
+                      </div>
+
+                      <div class="d-flex justify-content-center mb-3 ">
+                        <a href="" class="  inquery  shadow-lg px-4 p-2  rounded "  >Sign up</a>
+
+                    </div>
+
+
+                      
+                    </div>
+                   
+                    
+                  
+                    
+                  </form>
+    
+            </div> -->
+    </div>
+
+
+
+
+
+   
+
+
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+   
+    <!-- aos animation js cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos.js"></script>
+
+
+  </body>
+</html>
