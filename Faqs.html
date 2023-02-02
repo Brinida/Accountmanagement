@@ -19,7 +19,7 @@
 
     <title>Account management</title>
   </head>
-  <body>
+  <body style="background-color:#f5f5f5";>
  <section id="navBar" class="sticky-top bg-white ">
   <nav class="navbar shadow   bg-body rounded  navbar-expand-lg navbar-light  " >
   <div class="container">
@@ -44,7 +44,7 @@
           <a class="nav-link " aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
         </li>
 
         <li class="nav-item">
@@ -53,7 +53,7 @@
 
           <li class="nav-item dropdown ">
             <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span style="color: #2C5394;"><i class="fa-solid fa-user"></i></span> Free Trail
+                <span id="#clientArea" style="color: #2c5394a6;"><i class="fa-solid fa-user"></i></span> Client Area
             </a>
             <ul class="dropdown-menu shadow-sm p-3 mb-5 bg-body rounded" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="login.html">Login</a></li>
@@ -63,6 +63,11 @@
            
             </ul>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="Faqs.html">FAQs</a>
+          </li>
+
 
 
        
@@ -82,7 +87,7 @@
   </div> -->
  
 
-  <div class="conatainer " id="faqbg">
+  <div class="conatainer " id="abouttran">
     <div class="overlay">
    
     </div>
@@ -90,7 +95,7 @@
     <div class="row">
      
       <div class="col-md-12 hero-text" style="z-index: 2;" >
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" style="margin-top: 100px; margin-bottom: 100px;">
           <h1 class="text-white">FAQs</h1>
          
         </div>
@@ -119,10 +124,11 @@
 <!-- top part ends -->
 
 
-<!-- about us -->
+  <!-- FAQs  -->
+
 <section id="about us">
     <div class="container pt-5 pb-5 ">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12 pb-5">
                 <div class="text-center">
                 <h1 style="color: #2C5394;">FAQs</h1>
@@ -135,9 +141,8 @@
 
             </div>
             <div class="col-md-8 col-lg-8">
-                <div>
-                   <!-- FAQs  -->
-<section>
+              <div>
+                 
 
   <div class=" shadow p-3 mb-5 bg-body rounded">
   
@@ -184,16 +189,79 @@
       </div>
     </div>
   </div>
-  </section>
+
                 </div>
-  <!-- FAQs  ends -->
+
                 </div>
 
                 <div class="col-md-4 col-lg-4 rounded">
-                  <img src="images/transit.jpg" alt="" class="img-fluid rounded">
+                  <img src="images/faqsimg.jpg" alt="" class="img-fluid rounded">
 
                 </div>
 
+            </div> -->
+
+
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-12 pb-5">
+                  <div class="text-center">
+                  <h1 style="color: #2C5394;" data-aos="fade-down-right">FAQs</h1>
+                  <div class="d-flex justify-content-center">
+       
+                    <p class="hrr mb-4 mt-2" style="width: 28px;" ></p>
+                  </div>
+                  
+              </div>
+  
+              </div>
+                <div class="col-md-12">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h5 class="panel-title">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           What is Data Structure?
+                          </a>
+                        </h5>
+            
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body p-3">Data structure is a fundamental concept of any programming language, essential for algorithmic design.
+            </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h5 class="panel-title">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Benefits of Learning Data Structures
+                          </a>
+                        </h5>
+            
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body p-3">Any given problem has constraints on how fast the problem should be solved (time) and how much less resources the problem consumes(space). That is, a problem is constrained by the space and time complexity within which it has to be solved efficiently.
+            </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h5 class="panel-title">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is an array?
+                          </a>
+                        </h5>
+            
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body p-3">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
         </div>
@@ -201,7 +269,7 @@
     </div>
 
 </section>
-<!-- about us ends-->
+  <!-- FAQs  ends -->
 
 
 
@@ -276,17 +344,25 @@
           <h5 class=" navhead text-center">Our Social Media</h5>
          
           <ul class="d-flex mt-1 socialicon text-center align-item-center justify-content-center mb-3">
-            <li >
-              <a href=""  ><img src="images/facebook (1).png" alt="" height="24px" width="24px"></a>
+            <li  >
+              <div class="sm">
+              <a href=""  ><img src="images/facebook (3).png" alt="" height="24px" width="24px"></a>
+            </div>
             </li>
             <li >
-              <a href=""  ><img src="images/twitter.png" alt="" height="24px" width="24px"></a>
+              <div class="sm" >
+              <a href=""  ><img src="images/twitter (1).png" alt="" height="24px" width="24px"></a>
+            </div>
             </li>
             <li >
-              <a href=""  ><img src="images/instagram.png" alt="" height="24px" width="24px"></a>
+              <div  class="sm">
+              <a href=""  ><img src="images/instagram (1).png" alt="" height="24px" width="24px"></a>
+            </div>
             </li>
-            <li >
-              <a href=""  ><img src="images/youtube.png" alt="" height="24px" width="24px"></a>
+            <li  >
+              <div class="sm">
+              <a href=""  ><img src="images/youtube (1).png" alt="" height="24px" width="24px"></a>
+            </div>
             </li>
            
           </ul>
